@@ -1,0 +1,112 @@
+.broker-card-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  row-gap: .375rem;
+}
+
+.broker-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: .5rem;
+}
+
+.broker-card-image {
+  display: flex;
+  justify-content: center;
+
+  border: .125rem solid var(--gray);
+  border-radius: .375rem;
+
+
+  background-size: cover;
+  background-position: center;
+
+  width: 118px;
+  height: 118px;
+}
+
+.broker-card-image.primary {
+  background-image: url(../../../../img/corretora-desfocado.png);
+}
+
+.broker-card-image.second {
+  background-image: url(../../../../img/corretor-desfocado.png);
+}
+
+.broker-card-image img {
+  width: 75px;
+  height: 118px;
+}
+
+.broker-card-info h2 {
+  color: var(--dark-blue);
+  font-weight: 700;
+
+  margin-bottom: .25rem;
+}
+
+.broker-card-info h3 {
+  color: var(--dark-blue);
+  font-size: .875rem;
+  margin-bottom: .25rem;
+}
+
+.show-phone {
+  border: none;
+  background-color: inherit;
+  padding: 0;
+
+  cursor: pointer;
+  color: var(--orange);
+  font-size: .75rem;
+  font-weight: 400;
+  text-decoration: underline;
+
+  margin-bottom: .25rem;
+  transition: all .3s ease-in-out;
+}
+
+.show-phone:hover {
+  color: var(--dark-blue);
+  margin-bottom: .25rem;
+}
+
+.active {
+  display: block!important;
+}
+
+.phone-number {
+  display: none;
+  color: var(--orange);
+  font-size: .75rem;
+}
+
+@media (min-width: 768px) {
+  .broker-card-container {
+    justify-self: flex-end;
+  }
+}
+
+@media (min-width: 992px) {
+  .broker-card-container {
+    max-width: 362px;
+  }
+
+  .broker-card-image {
+    width: 148px;
+    height: 148px;
+  }
+
+  .broker-card-image img {
+    object-fit: cover;
+    width: 96px;
+    height: 148px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .broker-card-container {
+    justify-self: flex-start;
+  }
+}

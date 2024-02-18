@@ -1,0 +1,37 @@
+.zoom-card {
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  height: 276px;
+}
+
+.zoom-card img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transform: scale(2);
+  transition: transform 5s ease;
+}
+
+.zoom-card:hover img {
+  transform: scale(1.3);
+  
+}
+
+@media (min-width: 768px) {
+  .zoom-card {
+    justify-self: flex-start;
+  }
+}
+
+@media (min-width: 992px) {
+  .zoom-card {
+    height: 330px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .zoom-card {
+    justify-self: flex-end;
+  }
+}

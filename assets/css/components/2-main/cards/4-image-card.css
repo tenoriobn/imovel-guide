@@ -1,0 +1,41 @@
+.image-card {
+  cursor: pointer;
+  display: grid;
+  grid-template-rows: 276px;
+  row-gap: 1rem;
+}
+
+.card-image__modal {
+  padding: 0!important;
+  object-fit: cover;
+
+  max-height: 276px;
+  height: 100%;
+}
+
+.button-open-modal {
+  height: 28px;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .image-card {
+    justify-self: flex-start;
+  }
+}
+
+@media (min-width: 992px) {
+  .image-card {
+    grid-template-rows: 330px;
+    row-gap: 1rem;
+  }
+
+  .card-image__modal {
+    max-height: 330px;
+    height: 100%;
+  }
+
+  .button-open-modal {
+    height: 36px;
+  }
+}

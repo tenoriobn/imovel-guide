@@ -1,0 +1,77 @@
+.proportion-card {
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.proportion-form {
+  display: grid;
+  grid-template-rows: 1fr;
+  row-gap: .75rem;
+}
+
+.form__container {
+  align-self: center;
+  
+  display: grid;
+  row-gap: 1rem;
+}
+
+.form__container__inputs {
+  display: flex;
+  align-items: center;
+  gap: .375rem;
+}
+
+.form__container__inputs input {
+  font-size: .75rem;
+  color: var(--dark-blue);
+
+  width: 100%;
+  height: 28px;
+
+  padding: .75rem .5rem;
+}
+
+.input__result {
+  border: 2px solid!important;
+  border-color: var(--orange)!important;
+}
+
+.form__container__inputs span {
+  display: block;
+  background-color: var(--gray);
+  width: 80px;
+  height: 2px;
+}
+
+.proportion-form button {
+  max-width: 86px;
+  width: 100%;
+
+  height: 24px;
+}
+
+@media (min-width: 768px) {
+  .proportion-card {
+    justify-self: flex-end;
+  }
+}
+
+@media (min-width: 992px) {
+  .proportion-card {
+    justify-self: flex-end;
+  }
+  
+  .form__container {
+    row-gap: 1.5rem;
+  }
+
+  .form__container__inputs input {
+    font-size: 1rem;
+    height: 32px;
+  }
+
+  .proportion-form button {
+    height: 28px;
+  }
+}

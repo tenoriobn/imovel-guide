@@ -1,0 +1,10 @@
+@import url(../components/1-header/header.css);
+@import url(../components/2-main/main.css);
+@import url(../components/2-main/cards/1-broker-card.css);
+@import url(../components/2-main/cards/2-message-form.css);
+@import url(../components/2-main/cards/3-proportion-card.css);
+@import url(../components/2-main/cards/4-image-card.css);
+@import url(../components/2-main/cards/4-image-card-modal.css);
+@import url(../components/2-main/cards/5-image-download-card.css);
+@import url(../components/2-main/cards/6-zoom-card.css);
+@import url(../components/3-footer/footer.css);

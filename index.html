@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/globalStyles/style-global.css">
+  <title>Imóvel Guide</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <img src="assets/icon/logo.svg" alt="Logotipo da Imóvel Guide">
+      <button id="mobile-menu-button">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="mobile-menu" id="menu-mobile">
+        <ul>
+          <li><a href="#">Condomínios</a></li>
+          <li><a href="#">Fórum</a></li>
+          <li><a href="#">Guia</a></li>
+          <li><a href="#">Artigos</a></li>
+          <li><a href="#">Ferramentas</a></li>
+        </ul>
+        <div>
+          <ul>
+            <li><a href="#">Cotar Imóvel</a></li>
+            <li><a href="#">Planos</a></li>
+            <li><a href="#">Entrar</a></li>
+          </ul>
+          <button class="registration-button" id="registration-button">Cadastre-se</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="card broker-card-container">
+      <div class="broker-card">
+        <div class="broker-card-image primary">
+          <img src="assets/img/corretora.png" alt="Foto da corretora para o card com perfil da correta.">
+        </div>
+  
+        <div class="broker-card-info">
+          <h2>Nome Corretora</h2>
+          <h3>3.000 pontos</h3>
+          <p class="phone-number">(99) 99999-9999</p>
+          <button class="show-phone">ver telefone</button>
+        </div>
+      </div>
+
+      <div class="broker-card">
+        <div class="broker-card-image second">
+          <img src="assets/img/corretor.png" alt="Foto da corretora para o card com perfil da correta.">
+        </div>
+  
+        <div class="broker-card-info">
+          <h2>Nome Corretor</h2>
+          <h3>1.260 pontos</h3>
+          <p class="phone-number">(99) 99999-9999</p>
+          <button class="show-phone">ver telefone</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card message-card">
+      <h2 class="card__subtitle">Mande uma mensagem:</h2>
+
+      <form class="message-form" action="">
+        <input type="text" class="input" id="input-cpf" placeholder="Digite o CPF">
+        <input type="text" class="input" id="input-phone" placeholder="Digite seu telefone">
+        <textarea class="input" id="input-message" cols="30" rows="4" placeholder="Digite o assunto"></textarea>
+
+        <button  class="button message-form__button" id="form-button" type="submit">Enviar Mensagem</button>
+      </form>
+    </div>
+
+    <div class="card proportion-card">
+      <h2 class="card__subtitle">Regra de 3</h2>
+
+      <form class="proportion-form" action="">
+        <div class="form__container">
+          <div class="form__container__inputs">
+            <input type="text" class="input" id="input-1" placeholder="60">
+            <span></span>
+            <input type="text" class="input" id="input-2" placeholder="100">
+          </div>
+
+          <div class="form__container__inputs">
+            <input type="text" class="input" id="input-3" placeholder="30">
+            <span></span>
+            <input type="text" class="input input__result" id="input-4" placeholder="0">
+          </div>
+        </div>
+
+        <button class="button" id="button-calculate">Calcular</button>
+      </form>
+    </div>
+
+    <div class="image-card">
+      <img class="card card-image__modal" src="assets/img/residencia.png" alt="Imagem da residência para o card residência com modal de zoom para a imagem">
+      <button class="button button-open-modal" id="button-open-modal">Abrir imagem modal</button>
+
+      <div class="modal-background" id="modal">
+        <div class="modal-container">
+          <div class="modal-header">
+            <img class="modal-close" id="modal-close" src="assets/icon/close.svg" alt="Imagem da residência para o modal com a imagem em tamanho maior">
+          </div>
+          <div class="modal-image-container">
+            <img class="modal-image" src="assets/img/residencia.png" alt="Imagem da residência ampliada no modal de zoom">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="image-download-card">
+      <div class="card card-image__download" id="card-image__download">
+        <h2>Imovel Guide</h2>
+      </div>
+      <button class="button button-download" id="button-download">Download</button>
+    </div>
+
+    <div class="card zoom-card">
+      <img src="assets/img/residencia.png" alt="Imagem da residência para o card residêncial com zoom na imagem">
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <ul class="footer-list-items">
+        <li class="footer-list-item"><a href="#">Termos</a></li>
+        <li class="footer-list-item"><a href="#">Contatos</a></li>
+        <li class="footer-list-item"><a href="#">Sobre</a></li>
+      </ul>
+  
+      <div class="footer-info">
+        <p class="footer-copyright">Copyright 2022. Todos os direitos reservados.</p>
+      
+        <img class="footer-logo" src="assets/icon/logo.svg" alt="Logo da Imóvel Guide">
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+  <script type="module" src="assets/js/menu-hamburguer.js"></script>
+  <script type="module" src="assets/js/cards/1-broker-card.js"></script>
+  <script type="module" src="assets/js/cards/2-message-card.js"></script>
+  <script type="module" src="assets/js/cards/3-proportion-card.js"></script>
+  <script type="module" src="assets/js/cards/4-modal-image.js"></script>
+  <script type="module" src="assets/js/cards/5-image-download-card.js"></script>
+</body>
+</html>

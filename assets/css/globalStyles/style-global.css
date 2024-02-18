@@ -1,0 +1,86 @@
+@import url(./_variaveis.css);
+@import url(./_imports.css);
+
+body {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  grid-template-rows: auto 1fr auto;
+
+
+  font-family: var(--roboto);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  min-height: 100vh;
+}
+
+.body-menu-open {
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.card {
+  box-sizing: border-box;
+  border: .0625rem solid var(--gray);
+  border-radius: .375rem;
+
+  padding: .5rem;
+
+  height: 276px;
+  width: 100%;
+  max-width: 286px;
+}
+
+.card__subtitle {
+  color: var(--dark-blue);
+  margin-bottom: 1.25rem;
+}
+
+.input {
+  outline: none;
+  border: .0625rem solid var(--gray);
+  border-radius: .375rem;
+  box-sizing: border-box;
+  transition: all .2s ease-in-out;  
+}
+
+.input::placeholder {
+  color: var(--light-gray);
+}
+
+.input:focus {
+  border-color: var(--orange);
+}
+
+.button {
+  background-color: var(--orange);
+  border: none;
+  border-radius: .375rem;
+  cursor: pointer;
+  color: var(--white);
+  font-size: .75rem;
+  transition: all .3s ease-in-out;
+}
+
+.button:hover {
+  background-color: var(--dark-blue);
+}
+
+@media (min-width: 992px) {
+  .card {
+    max-width: 362px;
+    height: 330px;
+  }
+
+  .card__subtitle {
+    color: var(--dark-blue);
+    font-size: 1.5rem;
+  }
+
+  .button {
+    font-size: 1rem;
+  }
+}
